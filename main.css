@@ -1,3 +1,5 @@
+/* Combined Theme: Dark Mono Distraction-Free */
+
 /* One Dark Theme Colors */
 :root {
   --primary-bg-color: #20242A;
@@ -37,10 +39,8 @@
   --sn-stylekit-paragraph-text-color: var(--ui-text-color);
   --sn-stylekit-scrollbar-track-border-color: var(--border-color);
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
-}
-
-/* JetBrains Mono Font */
-:root {
+  
+  /* JetBrains Mono Font */
   --sn-stylekit-monospace-font: "JetBrains Mono", courier, monospace !important;
   --sn-stylekit-sans-serif-font: "JetBrains Mono", courier, monospace,
     -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -56,8 +56,10 @@
   src: url(https://fonts.gstatic.com/s/jetbrainsmono/v13/tDbp2o-flEEny0FZhsfKu5WU4xD-IQ-PuZJJXxfpAO-LfjGbsVNLG7DGdF6OZ1PszQMgo-8.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+
 /* Additional font-face definitions omitted for brevity */
 
+/* Apply JetBrains Mono Font */
 html,
 body,
 .editor-content .editable,
@@ -89,7 +91,7 @@ code {
   color: #304ffe !important;
 }
 
-/* Distraction Free Editing Experience from Standard Notes Writer Theme */
+/* Distraction-Free Editing Experience from Standard Notes Writer Theme */
 #tags-column {
   display: none;
 }
@@ -159,7 +161,9 @@ code {
 }
 
 .CodeMirror, .CodeMirror-fullscreen, .gKsMQS, .gKsMQS p, .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
-  font-family: Charter, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "JetBrains Mono", courier, monospace, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   font-size: 20px;
   line-height: 26px;
 }
