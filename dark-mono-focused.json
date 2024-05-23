@@ -1,0 +1,20 @@
+{
+  "identifier": "io.github.aamirbinabd.dark-mono-focused",
+  "name": "Dark Mono Focused",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "0.1.0",
+  "description": "A custom theme combining One Dark colors, JetBrains Mono font, and a distraction-free editing experience.",
+  "url": "https://raw.githubusercontent.com/aamirbinabd/dark-mono-focused/main/dark-mono-focused.css",
+  "download_url": "https://github.com/aamirbinabd/dark-mono-focused/archive/main.zip",
+  "latest_url": "https://github.com/aamirbinabd/dark-mono-focused",
+  "marketing_url": "https://github.com/aamirbinabd/dark-mono-focused",
+  "thumbnail_url": "",
+  "dock_icon": {
+    "type": "circle",
+    "background_color": "#20242A",
+    "foreground_color": "#d8d8d8",
+    "border_color": "#1a1e25"
+  },
+  "statusBar": "dark-content"
+}
