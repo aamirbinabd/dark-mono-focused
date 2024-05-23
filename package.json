@@ -5,4 +5,8 @@
   "sn": {
     "main": "main.css"
   },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/aamirbinabd/dark-mono-focused.git"
+  }
 }
