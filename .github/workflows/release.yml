@@ -16,13 +16,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Set up Date
+      id: date
+      run: echo "RELEASE_TAG=v$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+
     - name: Create GitHub Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v0.1.0
-        release_name: Initial Release
+        tag_name: ${{ env.RELEASE_TAG }}
+        release_name: "Release ${{ env.RELEASE_TAG }}"
         draft: false
         prerelease: false
